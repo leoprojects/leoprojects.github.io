@@ -68,7 +68,7 @@
     <h2 id="conctactTitle">Contacto</h2>
     <section>
         <div class="row">
-          <form class="col s12">
+          <form id="form" class="col s12">
             <div class="row dataField">
               <div class="input-field col s6">
                 <input id="first_name" type="text" class="validate">
@@ -85,11 +85,11 @@
                 <label for="first_name"><i class="material-icons">phone</i>Télefono</label>
               </div>
               <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
+                <input id="last_name" type="text" class="validate" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 <label for="last_name"><i class="material-icons">email</i>Email</label>
               </div>
             </div>
-            <a class="waves-effect waves-light btn right">Enviar</a>
+            <a class="waves-effect waves-light btn right" id="submit" onclick="URL: https://www.freecodecamp.com/email-submit">Enviar</a>
           </form>
         </div>
     </section>
